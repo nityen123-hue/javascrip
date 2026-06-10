@@ -1,5 +1,4 @@
- 
- // Task 1 - Variables with Prompt
+// Task 1 - Variables with Prompt
 let studentName = prompt("Enter Student Name:");
 const collegeName = prompt("Enter College Name:");
 var age = prompt("Enter Age:");
@@ -106,17 +105,15 @@ console.error("This is an error message.");
 
 //Task 14
 console.time("test");
-
-for (let i = 1; i <= 100000; i++) {
-    console.log(i);
+for (var i = 1; i <= 100000; i++) {
+//code
 }
+console.timeEnd("testEnd");
 
-console.timeEnd("test");
-
-//Task 15
+//Task 15  
 let students = [];
 
-for(let i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
     students[i] = prompt("Enter Student " + (i + 1) + " Name:");
 }
 
@@ -124,7 +121,7 @@ console.table(students);
 
 // Task 16
 console.log("Hello JavaScript");
-console.clear(); 
+console.clear();
 
 // Task 17
 let heading = document.getElementById("heading");

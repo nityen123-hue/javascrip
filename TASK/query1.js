@@ -14,3 +14,4 @@
     console.log("textContent Output:");
     console.log(content.textContent);
 
+    
