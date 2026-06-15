@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+</head>
+<body>
+
+<script>
+
+    var randomNumber = parseInt(Math.random() * 100);
+    var tries = 0;
+
+    for (;;) {
+       
+        var userNumber = parseInt(
+            prompt("Guess a number between 0 and 99:")
+        );
+
+        tries++;
+
+        if (userNumber === randomNumber) {
+            alert(
+                "Correct! The random number was " +
+                randomNumber +
+                ". You guessed it in " +
+                tries +
+                " tries."
+            );
+            break;
+        }
+        else if (userNumber < randomNumber) {
+            alert("Too Low! Try Again.");
+        }
+        else {
+            alert("Too High! Try Again.");
+        }
+    }
+
+    console.log("Random Number:", randomNumber);
+</script>
+
+</body>
+</html>
