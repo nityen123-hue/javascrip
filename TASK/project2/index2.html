@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+           var num = parseInt(Math.random()*100);
+        console.log("Random Number:", num);
+        var tries = 0;
+
+
+        for (; ;) {
+
+            var userNumber = Number(prompt("Enter a number between 1 and 100:"));
+            tries++;
+
+            if (userNumber === num) {
+                console.log(
+                    "Correct! The random number was " +
+                    num +
+                    ". You guessed it in " +
+                    tries +
+                    " tries."
+                );
+
+                break;
+
+            }
+
+            else {
+                alert("Wrong number! Try again.");
+            }
+        }
+
+    </script>
+</body>
+</html>
